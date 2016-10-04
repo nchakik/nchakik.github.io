@@ -23,7 +23,13 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
-
+	    
+	    <style>
+			body{ margin:0px; background:#000; }
+			#bg_container{ height:1000px; overflow:hidden; }
+			#bg{ width:100%; }
+			#content{ position:absolute; top:0px; padding:30px; color:#FFF; text-shadow:#000 2px 2px; }
+		</style>
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.js"></script>
@@ -89,6 +95,9 @@
 				</div>
 			</div>
 		</header>
+		<div id="bg_container">
+  			<video id="bg" src="assets/videos/background.mp4" autoplay="true" loop="true" muted="true"></video>
+		</div>
 
 		<div id="wrapper">
 			
