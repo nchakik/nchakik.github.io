@@ -148,7 +148,7 @@ header.top-header {
   width: 100%;
 }
 .shows {
- background: rgba(43, 62, 81, 0.77);
+ background: rgb(224, 31, 94);
  transition: all .6s;
 }
 .shows .navbar-default {
@@ -579,7 +579,7 @@ h2.footer-block {
 .form-group .btn.btn-o-white {
     width: 100%;
     padding: 9px 0;
-    background: #db5252;
+    background: #e01f5e;
     border: none;
 }
 ::-webkit-input-placeholder {
@@ -605,7 +605,7 @@ h2.footer-block {
 }
 .blog-post ul li .fa {
   border-radius: 33px 33px;
-  background: rgb(219, 82, 82);
+  background: #e01f5e;
   width: 28px;
   /* height: 20px; */
   text-align: center;
@@ -616,14 +616,14 @@ h2.footer-block {
   margin-left: -40px;
 }
 .blog-post .fa{
-  background: rgb(219, 82, 82);
+  background: #e01f5e;
   width: 28px;
   text-align: center;
   padding: 7px 7px;
   cursor: pointer;
 }
 .blog-post .fa:hover{
-  color: rgb(219, 82, 82);
+  color: #e01f5e;
   background:white;
   transition: all .6s;
 }
