@@ -23,6 +23,10 @@
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
+		 <link href='assets/css/nprogress.css' rel='stylesheet' />
+  		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic' rel='stylesheet' type='text/css'>
+  
+  
 	    
 	    <style>
 			body{ margin:0px; background:#000; }
@@ -438,8 +442,13 @@
 		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/script.js"></script>
 		<script src="assets/js/smoothscroll.js"></script>
+		<script src='assets/js/nprogress.js'></script>
 		<script type="text/javascript">
 		jQuery(document).ready(function($){
+		      $('body').show();
+    		  $('.version').text(NProgress.version);
+    		  NProgress.start();
+    		  setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
 
 		  	$(window).scroll(function() {
 		  		
@@ -465,6 +474,16 @@
 		      scrollTop : jQuery(this.hash).offset().top
 		    }, 1500);
 		});
+
+		setTimeout(function (){
+		   jQuery('html, body').animate({
+		      scrollTop : jQuery("#header").offset().top
+		    }, 2000);
+			// Code you want to delay or you can call the function reference directly instead of defining one
+		}, 3000);
+
+
+
 
 
 		</script>
