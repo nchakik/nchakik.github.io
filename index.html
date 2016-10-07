@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
 		
 		<!-- google fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Raleway:500,300' rel='stylesheet' type='text/css'>
+		
 		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold"/>
@@ -52,10 +52,16 @@
 				<div class="row">
 					<div class="col-md-3 col-xs-5 col-sm-4 header-logo">
 						<br>
-						<a href="index.html"> 
-							<h1 class="logo">Moota <span class="logo-head">LABs</span></h1>
-						</a>
-						<img src="assets/images/logo.png" alt="Moota" class="rotate">
+							<a href="index.html"> 
+								<h1 id="logo" class="logo">
+									<span>M</span><img src="assets/images/network.svg" width="15px" alt="Moota" class="rotate"/>
+									<img src="assets/images/network.svg" width="15px" alt="Moota" class="rotate"/>
+									<span>TA </span> 
+									<span class="logo-head">LABs</span>
+									<img src="assets/images/logo.png" alt="Moota" class="rotate">
+								</h1>
+							</a>
+							
 					</div>
 
 					<div class="col-md-8 col-md-offset-1 col-xs-7">
@@ -124,7 +130,10 @@
 						DATA SCIENCE : FROM LAB TO FACTORY
 					</div>
 					<div class="secondary-slogan">
-						The Chakik and Cheriat Mind.
+						FROM DATA TO INSIGHT.
+					</div>
+					<div class="secondary-slogan">
+						<img src="assets/images/layers.svg" width="160px" />	
 					</div>
 				</section>
 			</div><!-- header -->
@@ -452,15 +461,16 @@
 
 		  	$(window).scroll(function() {
 		  		
-		  		console.log("asdf");
 
 				if ($(window).scrollTop() > 100 ){
 		    
 		 		$('.top-header').addClass('shows');
+		 		$('#logo').css({  'font-size': '20px' ,'transition' : 'all .6s'});
 		    
 		  		} else {
 		    
 		   	 	$('.top-header').removeClass('shows');
+		   	 	$('#logo').css({  'font-size': '35px','transition' : 'all .6s'});
 		    
 		 		};   	
 			});

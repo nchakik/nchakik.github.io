@@ -172,6 +172,10 @@ h1.logo {
   color: white;
   display: inline-flex;
 }
+h1 img{
+  vertical-align: top;
+  height: 22px;
+}
 #header{  
   position: relative;     
   text-align: center;
@@ -269,7 +273,10 @@ h1.logo {
 #header > .bottom a:hover {
     opacity: 1;
 }
-
+.zoomed-out{
+  font-size: 20px;
+  transition : all .6s;
+}
 
 /*////////////////////////////////////////////////////////////////////////
 //  03 - Drawer with menu
