@@ -242,6 +242,12 @@ h1 img{
   -o-transform: rotate(360deg);
 }
 
+.rotatenow {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
 #header .slogan{
   font-size: 4em;
   margin-bottom: 15px;
@@ -719,3 +725,5 @@ h2.footer-block {
 button.navbar-toggle.collapsed {
   margin-top: 40px;
 }
+
+

@@ -107,11 +107,24 @@
 				</div>
 			</div>
 		</header>
-		<div id="bg_container">
+		<!--div id="bg_container">
 		  <video autoplay loop muted id="bg">
 		    <source src="assets/videos/background.webm" type="video/webm"></source>
   			<source src="assets/videos/background.mp4" type="video/mp4"></source>
   		  </video>	
+		</div-->
+
+		<div class="homepage-hero-module">
+		    <div class="video-container">
+		        <div class="filter"></div>
+		        <video autoplay loop class="fillWidth">
+		            <source src="assets/videos/background2.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		            <source src="assets/videos/background2.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		        </video>
+		        <div class="poster hidden">
+		            <img src="assets/images/background2.jpg" alt="">
+		        </div>
+		    </div>
 		</div>
 
 		<div id="wrapper">
@@ -452,12 +465,13 @@
 		<script src="assets/js/script.js"></script>
 		<script src="assets/js/smoothscroll.js"></script>
 		<script src='assets/js/nprogress.js'></script>
+		<script src='assets/js/loadvideo.js'></script>
 		<script type="text/javascript">
 		jQuery(document).ready(function($){
 		      $('body').show();
-    		  $('.version').text(NProgress.version);
-    		  NProgress.start();
-    		  setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+    		  //$('.version').text(NProgress.version);
+    		  //NProgress.start();
+    		  //setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
 
 		  	$(window).scroll(function() {
 		  		
@@ -466,12 +480,15 @@
 		    
 		 		$('.top-header').addClass('shows');
 		 		$('#logo').css({  'font-size': '20px' ,'transition' : 'all .6s'});
+		 		//$('.rotate').css({ '-webkit-transform': 'rotate(360deg)','-moz-transform': 'rotate(360deg)','-o-transform': 'rotate(360deg)'});
+		 		$('.rotate').addClass('rotatenow');
 		    
 		  		} else {
 		    
 		   	 	$('.top-header').removeClass('shows');
 		   	 	$('#logo').css({  'font-size': '35px','transition' : 'all .6s'});
-		    
+		        //$('.rotate').css({ '-webkit-transform': 'rotate(360deg)','-moz-transform': 'rotate(360deg)','-o-transform': 'rotate(360deg)'});
+		        $('.rotate').removeClass('rotatenow');
 		 		};   	
 			});
 
